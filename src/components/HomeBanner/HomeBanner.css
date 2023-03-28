@@ -1,0 +1,46 @@
+.home-text{
+    position: absolute;
+    left: -10%;
+    margin-top: 2rem;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+    font-size:.7em;
+    letter-spacing: .3ch;
+    color: #292828;
+}
+.text-underline{
+    position: absolute;
+    width: 2.5rem;
+    height: .01rem;
+    top:3.4rem;
+    left: 1%;
+    background-color: #444444;
+}
+.content-wrap{
+    position: relative;
+}
+
+.color-changer{
+    
+    color: #f8f8f8;
+    text-shadow:
+    -1px -1px 0 #444444,
+    1px -1px 0 #444444,
+    -1px 1px 0 #444444,
+    1px 1px 0 #444444  
+}
+.header-text{
+    margin-top: 2rem;
+    font-size: 16em;
+    color: #444444;
+    font-weight: 700;
+}
+.about-content{
+    width:50%;
+    letter-spacing: .3ch;
+    color: #444444b2;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin-left: 32%;
+}

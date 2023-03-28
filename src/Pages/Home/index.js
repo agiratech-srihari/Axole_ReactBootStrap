@@ -1,9 +1,16 @@
 import React from 'react'
-
-const HomePage = () => {
+import { Container } from 'react-bootstrap'
+import HomePage from '../../components/HomeBanner'
+import GridContainer from '../../components/GridContainer'
+import PageNation from '../../components/Pagination'
+const Home = () => {
   return (
-    <div>Home Page</div>
+    <Container fluid className='bg-col'>
+      <HomePage/>
+      <GridContainer/>
+      <PageNation/>
+    </Container>
   )
 }
 
-export default HomePage
+export default Home
