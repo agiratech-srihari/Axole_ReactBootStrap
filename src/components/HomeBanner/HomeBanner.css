@@ -31,7 +31,7 @@
 }
 .header-text{
     margin-top: 2rem;
-    font-size: 16em;
+    font-size: 16rem;
     color: #444444;
     font-weight: 700;
 }
@@ -43,4 +43,43 @@
     font-size: 1.4em;
     font-weight: 100;
     margin-left: 32%;
+}
+
+@media(max-width:1400px){
+    .header-text{
+        font-size: 14rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .header-text{
+        font-size: 10rem;
+    }
+}
+@media(max-width:992px){
+    .home-text{
+        left: 0;
+    }
+    .text-underline{
+        left: 5.8rem
+    }
+    .header-text{
+        font-size: 12rem;
+    }   
+    .about-content{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:778px){
+    .header-text{
+        font-size: 10rem;
+    }
+}
+
+@media(max-width:555px){
+    .header-text{
+        font-size: 7rem;
+    }
 }

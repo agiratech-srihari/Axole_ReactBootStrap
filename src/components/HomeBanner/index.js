@@ -11,7 +11,6 @@ const MainBanner = () => {
             <Col lg={4} md={0}> 
             </Col>
             <Col lg={8} md={12}>
-
             <div className='content-wrap'>
                 <p className='home-text'>A PERSONAL BLOG</p>
                 <span className='text-underline'></span>

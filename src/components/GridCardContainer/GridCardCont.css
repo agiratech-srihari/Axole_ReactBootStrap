@@ -2,6 +2,8 @@
     height: 90vh;
     border:none;
     background-color: #f8f8f8;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .card-title-h1 {
