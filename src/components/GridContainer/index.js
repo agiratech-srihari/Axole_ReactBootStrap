@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import GridImageCont from '../GridImageCont'
 import GridCardCont from '../GridCardContainer'
 
+
+
 const index = () => {
     const firstImage = 'https://preview.colorlib.com/theme/axole/images/image_1.jpg.webp';
     const secondImage = 'https://preview.colorlib.com/theme/axole/images/image_2.jpg.webp';
@@ -17,57 +19,70 @@ const index = () => {
             <Row className='grid-div-conatiner'>
 
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={firstImage} />
+
+                        <GridImageCont img={firstImage} />
+
                 </Col>
                 <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
             </Row>
             <Row >
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={secondImage} />
+
+                        <GridImageCont img={secondImage} />
+
                 </Col>
             </Row>
             <Row >
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={thirdImage} />
+
+                        <GridImageCont img={thirdImage} />
+
                 </Col>
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
             </Row>
             <Row >
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={FourthImage} />
+
+                        <GridImageCont img={FourthImage} />
+
                 </Col>
             </Row>
             <Row >
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={fifthImage} />
+
+                        <GridImageCont img={fifthImage} />
+
                 </Col>
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
             </Row>
             <Row >
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={sixthImage} />
+
+
+                        <GridImageCont img={sixthImage} />
+
                 </Col>
             </Row>
             <Row >
                 <Col lg={7} xs={12}>
-                    <GridImageCont img={seventhImage} />
+                        <GridImageCont img={seventhImage} />
                 </Col>
-              <Col lg={5} xs={12}>
+                <Col lg={5} xs={12}>
                     <GridCardCont />
                 </Col>
             </Row>

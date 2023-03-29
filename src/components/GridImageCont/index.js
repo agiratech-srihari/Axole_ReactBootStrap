@@ -1,17 +1,21 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import './GridImageCont.css'
-import Parallax from 'react-rellax'
 
+import { ParallaxBanner } from 'react-scroll-parallax';
 
-const index = (props) => {
+const GridImageCont = (props) => {
+
     const imageurl = props.img
     return (
+
         <Container className='image-container'>
-            <Parallax as='img' speed={5} className="img parallax-cont" src={imageurl}>
-            </Parallax>
+    <ParallaxBanner
+      layers={[{ image: imageurl, speed: -15 }]}
+      className="full img-div"
+    />
         </Container>
     )
 }
 
-export default index
+export default GridImageCont

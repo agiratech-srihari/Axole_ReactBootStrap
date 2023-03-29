@@ -34,8 +34,6 @@
 }
 
 .card-link{
-    position: absolute;
-    bottom: 20%;
     font-family: "Poppins", Arial, sans-serif;
     color: #444444;
     font-size: 13px;
@@ -62,4 +60,21 @@
     font-weight: 500;
     letter-spacing: 2px;
     color: #444444;
+}
+
+
+@media(max-width:1222px){
+    .card-title-h1 {
+        font-size: 70px;
+    }
+}
+
+@media(max-width:400px){
+    .card-title-h1{
+        font-size: 60px;
+    }
+    .card-content{
+        margin-top: 2rem;
+        font-size: 14px;
+    }
 }

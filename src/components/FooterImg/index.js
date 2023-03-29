@@ -14,7 +14,7 @@ const index = () => {
     <>
       {imgArray.map((item, i) => (
         <div className='footer-image-cont' key={i} >
-          <img src={item} className="footer-img"/>
+          <img src={item} className="footer-img" alt='blog-img'/>
           <div>
             <div className='footer-div-flex'>
               <p className='footer-icon-content'><FontAwesomeIcon icon={faCalendarAlt}  /> JAN. 30,2021</p>

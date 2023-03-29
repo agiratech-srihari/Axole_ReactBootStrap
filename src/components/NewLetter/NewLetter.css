@@ -41,8 +41,7 @@ input{
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #1b1b1b;
-    opacity: .2; /* Firefox */
+    color:black;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;

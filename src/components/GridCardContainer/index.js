@@ -2,14 +2,11 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import './GridCardCont.css'
-import Parallax from 'react-rellax'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faComment, faUser } from '@fortawesome/fontawesome-free-solid'
 const index = () => {
     return (
         <Container className='card-container'>
-            <Parallax speed={5} className="parallax-cont">
-
                 <Card className="card-cont">
                     <Card.Body className='card-body'>
                         <Card.Subtitle className='icon-cont'>
@@ -26,8 +23,6 @@ const index = () => {
                         <Card.Link href="#" className='card-link'>LEARN MORE →</Card.Link>
                     </Card.Body>
                 </Card>
-
-            </Parallax>
          </Container>
     )
 }
