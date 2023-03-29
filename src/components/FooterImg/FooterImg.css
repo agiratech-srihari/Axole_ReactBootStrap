@@ -1,0 +1,30 @@
+.footer-image-cont{
+    height:7vh;
+    margin: 1rem 0 0 0;
+    display: flex;
+}
+.footer-div-flex{
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.footer-h6{
+    color: #444444;
+    margin-top: .5rem;
+    font-weight: 500;
+}
+
+.footer-icon-content{
+
+    font-size: 10px;
+    margin: .2rem;
+    color: #999999;
+}
+
+.footer-img{
+    object-fit: cover;
+    width: 45px;
+    margin: .5rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,55 @@
+.footer-card {
+    height: 35vh;
+    border: none;
+    background-color: #f8f8f8;
+    margin: 2rem 0;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+.footer-text {
+    margin-top: 2rem;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+
+.icon-flex-footer{
+    display: flex;
+}
+
+.icon-design{
+    color:#f8f8f8;
+    padding:.5rem;
+    margin: .5rem;
+    width:1rem;
+    background-color: #999999;
+    border-radius: 5px;
+}
+
+.footer-link{
+    color: #666666;
+    cursor: pointer !important;
+}
+
+.link-1{
+    margin-top: 2rem;
+}
+
+
+.footer-link:hover{
+    color: #f4bf2c;
+    transition: .3s all ease;
+}
+.footer-text-content{
+    margin: 2rem 0;
+}
+
+.icon-size{
+    font-size: 20px !important;
+    margin: .7rem .7rem .7rem 0!important;
+    color:#1f1e1e !important;
+}
