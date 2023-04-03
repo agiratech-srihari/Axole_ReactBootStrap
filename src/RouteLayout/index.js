@@ -4,14 +4,18 @@ const Layout = React.lazy(() => import ('../Conatiner/Layout') )
 const Home = React.lazy(() => import("../Pages/Home"));
 const About = React.lazy(() => import("../Pages/About"));
 const Contact = React.lazy(() => import("../Pages/Contact"));
+const Login = React.lazy(() => import("../Pages/Login"));
+
 // import  loadingGif from '../assets/images/1487.gif'
 
 const RouteLayout = () => {
   return (
     <Suspense fallback={<div style={{ height: '100vh', width: "100%", overflow: "hidden", display: "flex", justifyContent: 'center', alignItems: 'center' ,background:'#fff'}}></div>}>
       <Routes>
+        <Route path='/login' element={<Login />}>
+        </Route>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Navigate to='/home' replace />} />
+          <Route path="/" element={<Navigate to='/login' replace />} />
           <Route path="/home" element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
