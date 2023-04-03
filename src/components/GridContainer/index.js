@@ -17,11 +17,8 @@ const index = () => {
     return (
         <Container className='Grid-container'>
             <Row className='grid-div-conatiner'>
-
                 <Col lg={7} xs={12}>
-
                         <GridImageCont img={firstImage} />
-
                 </Col>
                 <Col lg={5} xs={12}>
                     <GridCardCont />
