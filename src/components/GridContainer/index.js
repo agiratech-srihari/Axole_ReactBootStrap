@@ -7,6 +7,7 @@ import GridCardCont from '../GridCardContainer'
 
 
 const index = () => {
+    
     const firstImage = 'https://preview.colorlib.com/theme/axole/images/image_1.jpg.webp';
     const secondImage = 'https://preview.colorlib.com/theme/axole/images/image_2.jpg.webp';
     const thirdImage = 'https://preview.colorlib.com/theme/axole/images/image_3.jpg.webp';
@@ -14,6 +15,7 @@ const index = () => {
     const fifthImage = 'https://preview.colorlib.com/theme/axole/images/image_5.jpg.webp';
     const sixthImage = 'https://preview.colorlib.com/theme/axole/images/image_6.jpg.webp';
     const seventhImage = 'https://preview.colorlib.com/theme/axole/images/image_7.jpg.webp';
+
     return (
         <Container className='Grid-container'>
             <Row className='grid-div-conatiner'>

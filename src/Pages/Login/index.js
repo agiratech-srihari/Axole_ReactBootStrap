@@ -2,15 +2,37 @@ import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { GoogleLogin } from '@react-oauth/google'
 import { useNavigate } from 'react-router-dom'
-import { Form,Button,Card } from 'react-bootstrap'
+import useAuth from '../../context/Auth/useAuth'
+import { Form, Button, Card } from 'react-bootstrap'
+import jwtDecode from 'jwt-decode';
+
 import './Login.css'
 
 const Login = () => {
-  const navigate = useNavigate()
-  const handleCallBack = (res) => {
-    console.log('res', res.credential);
-    navigate("/home")
+
+  const role = [ 'admin','superadmin','contentmanager']
+
+  const getRandomRole = (arr) => {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+    return item;
   }
+
+  const { login } = useAuth()
+  const navigate = useNavigate()
+
+  const handleCallBack = (res) => {
+    console.log('res', jwtDecode(res.credential));
+    const credential = jwtDecode(res.credential);
+    const details = {
+      profileImg:credential.picture,
+      profileName:credential.name,
+    }
+    const randomRole = getRandomRole(role)
+    login(credential.jti,details, randomRole)
+    navigate("/")
+  }
+
   useEffect(() => {
     /*global google*/
     google.accounts.id.initialize({
@@ -25,15 +47,15 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault()
-    navigate('/home')
+    navigate('/')
   }
 
   return (
-    <Container fluid>
+    <Container fluid style={{background:'#f8f8f8'}}>
       <div className='login-div-cont'>
-        <Card style={{ width: '20rem', marginBottom:'2rem' }}>
+        <Card style={{ width: '20rem', marginBottom: '2rem' }}>
           <Card.Body>
-            <Card.Title style={{textAlign:'center'}}>Welcome Back</Card.Title>
+            <Card.Title style={{ textAlign: 'center' }}>Welcome Back</Card.Title>
             <Card.Text>
               <Form>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -55,8 +77,14 @@ const Login = () => {
 
         <GoogleLogin
           onSuccess={credentialResponse => {
-            console.log(credentialResponse);
-            navigate('/home')
+            const credential = jwtDecode(credentialResponse.credential);
+            const details = {
+              profileImg:credential.picture,
+              profileName:credential.name,
+            }
+            const randomRole = getRandomRole(role)
+            login(credential.jti,details,randomRole)
+            navigate('/')
           }}
           onError={() => {
             console.log('Login Failed');
