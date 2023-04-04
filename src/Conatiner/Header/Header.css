@@ -1,4 +1,23 @@
 .nav-link:active {
-    color:#000000;
+    color:#000000 ;
     font-weight: bold !important;
   }
+
+.flex-div{
+  display: flex;
+}
+
+.flex-div img {
+  height: 2rem;
+  margin: .5rem;
+  border-radius: 50%;
+}
+
+.flex-div p {
+  margin: .7rem .7rem .7rem 0;
+}
+@media (max-width:991px){
+  .flex-div{
+    display: none;
+  }
+}
